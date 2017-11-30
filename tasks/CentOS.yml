@@ -1,0 +1,10 @@
+---
+# tasks file for ansible-role-pip
+- name: "Make sure the packages are installed(CentOS)"
+  yum:
+    name: python-pip
+    state: present
+  when: ansible_os_family == "RedHat" or ansible_os_family == "CentOS"
+
+- name: "Config pip with pip.conf"
+  template: src=pip.conf.j2 dest=~/.pip/pip.conf

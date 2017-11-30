@@ -1,0 +1,4 @@
+---
+# tasks file for ansible-role-pip
+- name: Install EPEL
+  commands: ls -al /data0
