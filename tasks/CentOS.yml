@@ -2,9 +2,22 @@
 # tasks file for ansible-role-pip
 - name: "Make sure the packages are installed(CentOS)"
   yum:
-    name: python-pip
+    name: "{{ item }}"
     state: present
-  when: ansible_os_family == "RedHat" or ansible_os_family == "CentOS"
+  with_items:
+    - python-pip
+    - python-setuptools
+
+- name: "Make sure ~/.pip directory exists"
+  file: path=~/.pip state=directory
 
 - name: "Config pip with pip.conf"
   template: src=pip.conf.j2 dest=~/.pip/pip.conf
+
+- name: "Upgrade basic pip packages"
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - pip
+    - virtualenv

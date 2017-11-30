@@ -1,4 +1,6 @@
 ---
 # tasks file for ansible-role-pip
-- name: Install EPEL
-  commands: ls -al /data0
+
+- name: "Install pip on CentOS"
+  include: CentOS.yml
+  when: ansible_os_family == "RedHat" or ansible_os_family == "CentOS"
