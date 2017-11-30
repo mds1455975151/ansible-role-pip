@@ -1,7 +1,7 @@
 ansible-role-pip    [![Build Status](https://www.travis-ci.org/mds1455975151/ansible-role-pip.svg?branch=master)](https://travis-ci.org/mds1455975151/ansible-role-pip)
 =========
 
-This role install pip (Python package manager tools) and configure repository mirror.
+This role install [pip](https://pip.pypa.io) (Python package manager tools) and configure repository mirror.
 
 Role Variables
 --------------
