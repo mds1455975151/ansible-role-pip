@@ -2,5 +2,5 @@
 # tasks file for ansible-role-pip
 
 - name: "Install pip on CentOS"
-  include: CentOS.yml
+  import_tasks: CentOS.yml
   when: ansible_os_family == "RedHat" or ansible_os_family == "CentOS"
