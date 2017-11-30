@@ -1,6 +1,12 @@
 ---
 # tasks file for ansible-role-pip
-- name: "Make sure the packages are installed(CentOS)"
+
+- name: "Install Epel repository"
+  yum:
+    name: epel-release
+    state: present
+
+- name: "Make sure the packages are installed (CentOS)"
   yum:
     name: "{{ item }}"
     state: present
