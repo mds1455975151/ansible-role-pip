@@ -26,6 +26,8 @@ Download the dependencies by issuing this command:
 ```
 ansible-galaxy install --role-file requirements.yml
 
+```
+
 Example Playbook
 ----------------
 

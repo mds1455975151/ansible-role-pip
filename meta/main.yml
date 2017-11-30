@@ -21,4 +21,4 @@ galaxy_info:
     - system
     - development
   dependencies:
-  - mds1455975151.epel
+    - mds1455975151.epel
