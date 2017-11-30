@@ -5,9 +5,17 @@ This role install pip and configure repository mirror.
 
 Role Variables
 --------------
-
+    # Pypi mirrors website url
     pip_index_url: http://mirrors.aliyun.com/pypi/simple/
+
+    # Pypi mirrors host
     pip_mirrors_host: mirrors.aliyun.com
+
+    # Install with the package installer (package) or the get-pip installer (installer)
+    pip_install_method: "package"
+
+    # The url for the get-pip.py installer
+    pip_install_url: "https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py"
 
 Example Playbook
 ----------------
