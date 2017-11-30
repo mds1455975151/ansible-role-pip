@@ -1,5 +1,5 @@
----
+ls ----
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-pip
+    - mds1455975151.ansible-role-pip
