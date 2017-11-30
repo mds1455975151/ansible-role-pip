@@ -5,13 +5,6 @@ galaxy_info:
 
   issue_tracker_url: https://github.com/mds1455975151/ansible-role-pip/issues
 
-  # Some suggested licenses:
-  # - BSD (default)
-  # - MIT
-  # - GPLv2
-  # - GPLv3
-  # - Apache
-  # - CC-BY
   license: license (GPLv2, CC-BY, etc)
 
   min_ansible_version: 1.2
