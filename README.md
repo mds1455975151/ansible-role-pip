@@ -7,7 +7,7 @@ Role Variables
 --------------
 
     pip_index_url: http://mirrors.aliyun.com/pypi/simple/
-    pip_trusted_host: mirrors.aliyun.com
+    pip_mirrors_host: mirrors.aliyun.com
 
 Example Playbook
 ----------------
@@ -16,7 +16,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: mds1455975151.ansible-role-pip, x: 42 }
+         - { role: mds1455975151.ansible-role-pip }
 
 License
 -------
