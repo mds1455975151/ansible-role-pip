@@ -17,6 +17,15 @@ Role Variables
     # The url for the get-pip.py installer
     pip_install_url: "https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py"
 
+Dependencies
+------------
+
+- mds1455975151.epel(example)
+
+Download the dependencies by issuing this command:
+```
+ansible-galaxy install --role-file requirements.yml
+
 Example Playbook
 ----------------
 
