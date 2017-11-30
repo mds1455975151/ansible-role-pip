@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.org/mds1455975151/ansible-role-pip.svg?branch=master)](https://travis-ci.org/mds1455975151/ansible-role-pip)
+
 pip
 =========
 
