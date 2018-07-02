@@ -19,5 +19,4 @@ galaxy_info:
     - python
     - system
     - development
-  dependencies:
-    - mds1455975151.epel
+  dependencies: []
