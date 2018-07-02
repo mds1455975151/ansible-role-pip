@@ -5,7 +5,7 @@ galaxy_info:
 
   issue_tracker_url: https://github.com/mds1455975151/ansible-role-pip/issues
 
-  license: license (GPLv2, CC-BY, etc)
+  license: 'BSD'
 
   min_ansible_version: 1.2
 
@@ -15,9 +15,8 @@ galaxy_info:
         - 7
 
   galaxy_tags: 
-    - Ansible
     - pip
-    - Python
+    - python
     - system
     - development
   dependencies:
